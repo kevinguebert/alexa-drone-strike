@@ -1,3 +1,3 @@
 wheel==0.26.0
 requests
-dateutil
+python-dateutil
