@@ -184,6 +184,9 @@ def get_drone_stikes_this_month():
 
 @ask.intent('GetRecentDroneStrike')
 def get_recent_drone_strike():
+    response = requests.get(url).json()
+
+    strikes = response["strike"]
     strikes_count = len(strikes)
     last_strike = strikes[strikes_count-1]
 
